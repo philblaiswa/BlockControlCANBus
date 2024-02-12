@@ -1,4 +1,4 @@
-#include <mcp2515.h>
+  #include <mcp2515.h>
 
 // MCP 2515
 struct can_frame canMsg;
@@ -18,20 +18,21 @@ void setup()
   Serial.println("====================");
   Serial.println();
 
-  Serial.println("Setting up relays");
+  Serial.println("  Setting up relays");
   for (int i = 0; i < 8; i++)
   {
     pinMode(orderedPins[i], OUTPUT);
   }
   clearAll();
 
-  Serial.println("Setting up MCP2515");
+  Serial.println("  Setting up MCP2515");
   mcp2515.reset();
   mcp2515.setBitrate(CAN_500KBPS,MCP_8MHZ); //Sets CAN at speed 500KBPS and Clock 8MHz
   mcp2515.setNormalMode();
 
   Serial.println();
-  Serial.println("Setup done");
+  Serial.println("  Setup done");
+  Serial.println("====================");
   Serial.println();
 }
 
@@ -39,12 +40,11 @@ uint8_t count = -1;
 
 void loop() 
 {
-  /*
   if (mcp2515.readMessage(&canMsg) == MCP2515::ERROR_OK) // To receive data (Poll Read)
   {
     int dialPosition = canMsg.data[0];
 
-    Serial.print("Received CAN message. Dial position is ");
+    Serial.print("Received CAN message, new state is: ");
     Serial.println(dialPosition);
 
     clearAll();
@@ -54,8 +54,8 @@ void loop()
     trigger(index, LOW);
     trigger(index + 1, LOW);
   }
-  */
 
+  /*
   // Relay board test
   uint8_t prevPin = count % 8;
   count++;
@@ -68,6 +68,7 @@ void loop()
   trigger(pin, LOW);
   
   delay(2000);
+  */
 }
 
 void trigger(uint8_t pinIndex, uint8_t val)
