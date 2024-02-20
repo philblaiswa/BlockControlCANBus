@@ -25,9 +25,9 @@ void setup()
   }
   clearAll();
 
-  Serial.println("  Setting up MCP2515");
+  Serial.println("  Setting up MCP2515: 40Kbps/8Hz");
   mcp2515.reset();
-  mcp2515.setBitrate(CAN_500KBPS,MCP_8MHZ); //Sets CAN at speed 500KBPS and Clock 8MHz
+  mcp2515.setBitrate(CAN_40KBPS,MCP_8MHZ); //Sets CAN at speed 40KBPS and Clock 8MHz
   mcp2515.setNormalMode();
 
   Serial.println();
