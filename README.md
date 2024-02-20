@@ -12,7 +12,7 @@ Material
 - Diode Holders 3mm: [Amazon](https://www.amazon.com/dp/B09XMQWM7X?ref=ppx_yo2ov_dt_b_product_details&th=1)
 
 Server diagram
-![Server diagram](https://github.com/philblaiswa/BlockControlCANBus/Documentation/ServerDiagram.jpg]
+![Server diagram](https://github.com/philblaiswa/BlockControlCANBus/blob/main/Documentation/ClientDiagram.jpg]
 
 Client diagram
 ![Client diagram](https://github.com/philblaiswa/BlockControlCANBus/Documentation/ClientDiagram.jpg]
