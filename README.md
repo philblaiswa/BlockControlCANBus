@@ -12,9 +12,9 @@ Material
 - Diode Holders 3mm: [Amazon](https://www.amazon.com/dp/B09XMQWM7X?ref=ppx_yo2ov_dt_b_product_details&th=1)
 
 Server diagram
-![Server diagram](https://github.com/philblaiswa/BlockControlCANBus/blob/main/Documentation/ClientDiagram.jpg]
+![Server diagram](https://github.com/philblaiswa/BlockControlCANBus/blob/main/Documentation/ClientDiagram.jpg?raw=true]
 
 Client diagram
-![Client diagram](https://github.com/philblaiswa/BlockControlCANBus/Documentation/ClientDiagram.jpg]
+![Client diagram](https://github.com/philblaiswa/BlockControlCANBus/Documentation/ClientDiagram.jpg?raw=true]
 
 Based on this tutorial: https://circuitdigest.com/microcontroller-projects/arduino-can-tutorial-interfacing-mcp2515-can-bus-module-with-arduino
